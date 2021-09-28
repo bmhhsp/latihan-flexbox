@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    height: 3000px;
+    background-color: rgb(184, 184, 184);
+}
+
+/* 1. service */
+.container__satu {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.service {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.service.satu {
+    background-color: rgb(235, 122, 122);
+}
+
+.service.dua {
+    background-color: rgb(52, 180, 189);
+}
+
+.service.tiga {
+    background-color: rgb(224, 171, 102);
+}
+
+/* 2. gallery */
+.container__dua {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+/* card */
+.container__tiga {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.card {
+    border: 1px solid rgb(82, 81, 81);
+    border-radius: 10px;
+    background-color: #cac1b6;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.card .header {
+    height: 150px;
+    background-color: rgb(100, 102, 101);
+}
+
+.card .content {
+    text-align: center;
+    padding: 15px;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* responsive */
+@media( min-width: 550px ) {
+    .container__satu {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .service {
+        width: 30%;
+    }
+
+    .thumbnail{
+        width: 25%;
+    }
+    
+    .container__tiga {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card {
+        overflow: hidden;
+        margin: 10px;
+        flex: 1;
+    }
+
+    .card.besar {
+        transform: scale(1.13);
+        width: 100%;
+    }
+}
